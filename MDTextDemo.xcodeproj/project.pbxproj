@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		086BA82A24CDC5ED0090141A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 086BA82924CDC5ED0090141A /* Assets.xcassets */; };
 		086BA82D24CDC5ED0090141A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 086BA82C24CDC5ED0090141A /* Preview Assets.xcassets */; };
 		086BA83024CDC5ED0090141A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086BA82E24CDC5ED0090141A /* LaunchScreen.storyboard */; };
+		086BA83924CDC7740090141A /* MDText in Frameworks */ = {isa = PBXBuildFile; productRef = 086BA83824CDC7740090141A /* MDText */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				086BA83924CDC7740090141A /* MDText in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = MDTextDemo;
+			packageProductDependencies = (
+				086BA83824CDC7740090141A /* MDText */,
+			);
 			productName = MDTextDemo;
 			productReference = 086BA82024CDC5EB0090141A /* MDTextDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 086BA81724CDC5EB0090141A;
+			packageReferences = (
+				086BA83724CDC7740090141A /* XCRemoteSwiftPackageReference "MDText" */,
+			);
 			productRefGroup = 086BA82124CDC5EB0090141A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		086BA83724CDC7740090141A /* XCRemoteSwiftPackageReference "MDText" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Lambdo-Labs/MDText";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		086BA83824CDC7740090141A /* MDText */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 086BA83724CDC7740090141A /* XCRemoteSwiftPackageReference "MDText" */;
+			productName = MDText;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 086BA81824CDC5EB0090141A /* Project object */;
 }

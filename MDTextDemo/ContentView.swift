@@ -7,10 +7,24 @@
 //
 
 import SwiftUI
+import MDText
 
 struct ContentView: View {
+  var markdown =
+  """
+  # Hello, MDTextDemo!
+
+  **This is MDText Demo App**
+
+  <https://github.com/ykws/MDTextDemo>
+
+  [MDText](https://github.com/Lambdo-Labs/MDText)
+
+  _Great!_
+  """
+  
   var body: some View {
-    Text("Hello, World!")
+    MDText(markdown: markdown).padding()
   }
 }
 
